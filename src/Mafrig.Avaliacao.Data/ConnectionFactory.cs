@@ -8,7 +8,7 @@ namespace Mafrig.Avaliacao.Data
     {
         public IDbConnection GetConnection()
         {
-            return new SqlConnection("Server=JULNOTE\\SQLEXPRESS;Database=Mafrig;Trusted_Connection=True;");
+            return new SqlConnection("Server=LOCALHOST\\SQLEXPRESS;Database=Mafrig;Trusted_Connection=True;");
         }
     }
 }

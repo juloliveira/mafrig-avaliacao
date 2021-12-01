@@ -7,16 +7,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Relatorios\**" />
+    <EmbeddedResource Remove="Relatorios\**" />
+    <None Remove="Relatorios\**" />
+    <Page Remove="Relatorios\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="PropertyChanged.Fody" Version="3.4.0" />
     <PackageReference Include="RestSharp" Version="106.13.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Mafrig.Avaliacao.Core\Mafrig.Avaliacao.Core.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Relatorios\" />
   </ItemGroup>
 
 </Project>
